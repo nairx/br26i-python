@@ -32,20 +32,24 @@
 
 
 
-import sys 
+# import sys 
 
-#regular 
-def numbers():
-    return [i for i in range(10000000)]
+# #regular 
+# def numbers():
+#     return [i for i in range(10000000)]
 
 #generator 
-def numbers_gen():
-    for i in range(10000000):
-         yield i
+# def numbers_gen():
+#     for i in range(10000000):
+#          yield i
+# mylist = numbers()
+# mygen = numbers_gen()
+# print(sys.getsizeof(mylist), " bytes")
+# print(sys.getsizeof(mygen), " bytes")
 
-mylist = numbers()
-mygen = numbers_gen()
-
+import sys
+mylist = [i for i in range(1000000)]
+mygen = (i for i in range(1000000))
 print(sys.getsizeof(mylist), " bytes")
 print(sys.getsizeof(mygen), " bytes")
 

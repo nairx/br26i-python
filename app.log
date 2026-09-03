@@ -1,0 +1,10 @@
+INFO:root:Calculating Bill
+ERROR:root:quantity=5
+INFO:root:Calculating Bill
+DEBUG:root:price=1000
+ERROR:root:quantity=5
+DEBUG:root:total=5000
+2026-09-03 11:35:53,579 - INFO - Calculating Bill
+2026-09-03 11:35:53,579 - DEBUG - price=1000
+2026-09-03 11:35:53,579 - ERROR - quantity=5
+2026-09-03 11:35:53,579 - DEBUG - total=5000
