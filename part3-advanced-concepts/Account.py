@@ -7,3 +7,5 @@ class Account:
         self.phone = phone
         self.account_type = account_type
         self.balance = balance
+    def __str__(self):
+        return f"{self.account_no}-{self.customer_name}"

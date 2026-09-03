@@ -37,6 +37,7 @@ def main():
                 account_type,
                 balance
             )
+            print(account)
             bank.create_account(account)
         elif choice == "2":
 
