@@ -1,0 +1,32 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .row{
+            display: flex;
+            justify-content: center;
+        }
+        .row div{
+            border: 1px solid gray;
+            margin: 10px;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="row">
+    {% for row in products %}
+        <div>
+           <h1>{{row.name}}</h1> 
+           <p>{{row.description}}</p>
+           <h4>{{row.price}}</h4>
+           <p>
+            <button>Add to Cart</button>
+           </p>
+        </div>
+      {% endfor %}
+      </div>
+</body>
+</html>

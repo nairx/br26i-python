@@ -8,8 +8,15 @@ def todo(request):
     mytodo = models.todo.objects.all()
     data = {'todos':mytodo}
     return render(request,"todo.html",data)
+
 def deleteTodo(request):
     if request.method == "GET":
         todoId = int(request.GET.get("id"))
         models.todo.objects.filter(id=todoId).delete()
     return todo(request)
+
+
+def product(request):
+    products = models.product.objects.all()
+    data = {'products':products}
+    return render(request,"product.html",data)
